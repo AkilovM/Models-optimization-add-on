@@ -203,7 +203,7 @@ class Optimize(Operator):
 				#в цикле по списку моделей obj fbx:
 				for i in range(len(models_list)):
 					#очистить сцену blender
-					bpy.ops.object.select_by_type(type='MESH')
+					bpy.ops.object.select_all(action='SELECT')
 					bpy.ops.object.delete()
 					
 					#открыть модель в blender
